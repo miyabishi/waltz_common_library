@@ -19,6 +19,7 @@ namespace waltz
             public:
                 Parameters();
                 Parameters(const Parameters& aOther);
+                Parameters(const QJsonArray& aArray);
                 Parameters& operator=(const Parameters& aOther);
 
             public:

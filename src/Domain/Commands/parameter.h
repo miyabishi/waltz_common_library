@@ -26,7 +26,6 @@ namespace waltz
                 QJsonValue value() const;
                 QString name() const;
                 QJsonValue toJsonValue() const;
-                QString toString() const;
 
             private:
                 QString  mName_;

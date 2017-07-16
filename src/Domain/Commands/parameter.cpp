@@ -38,11 +38,6 @@ QJsonValue Parameter::value() const
     return mValue_;
 }
 
-QString Parameter::toString() const
-{
-    return mValue_.toString();
-}
-
 QJsonValue Parameter::toJsonValue() const
 {
     QJsonObject jsonObject;
@@ -50,3 +45,4 @@ QJsonValue Parameter::toJsonValue() const
     jsonObject[PARAMETER_KEY_VALUE] = mValue_;
     return QJsonValue(jsonObject);
 }
+
