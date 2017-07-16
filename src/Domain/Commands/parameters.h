@@ -6,8 +6,6 @@
 #include "parameter.h"
 #include "../../../waltzcommonlibrary_global.h"
 
-
-
 namespace waltz
 {
     namespace common
