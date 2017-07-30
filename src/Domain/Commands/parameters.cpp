@@ -11,13 +11,9 @@ Parameters::Parameters()
 
 Parameters::Parameters(const QJsonArray &aArray)
 {
-    qDebug() << Q_FUNC_INFO;
-    qDebug() << "array" << aArray;
     foreach(const QJsonValue& jsonValue, aArray)
     {
-        qDebug() << "value" << jsonValue;
         QJsonObject jsonObject = jsonValue.toObject();
-        qDebug() << "object" << jsonObject;
         append(Parameter(jsonObject.value(PARAMETER_KEY_NAME).toString(),
                          jsonObject.value(PARAMETER_KEY_VALUE)));
     }

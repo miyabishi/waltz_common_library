@@ -39,3 +39,13 @@ QJsonArray ParametersList::toJsonArray() const
     }
     return jsonArray;
 }
+
+int ParametersList::size() const
+{
+    return mParametersList_.size();
+}
+
+Parameters ParametersList::at(int aIndex) const
+{
+    return mParametersList_.at(aIndex);
+}

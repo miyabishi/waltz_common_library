@@ -3,7 +3,6 @@
 
 #include <QList>
 #include <QJsonArray>
-
 #include "../../../waltzcommonlibrary_global.h"
 #include "parameters.h"
 
@@ -23,6 +22,8 @@ namespace waltz
             public:
                 void append(const Parameters aParameters);
                 QJsonArray toJsonArray() const;
+                int size() const;
+                Parameters at(int aIndex) const;
 
             private:
                 QList<Parameters> mParametersList_;
