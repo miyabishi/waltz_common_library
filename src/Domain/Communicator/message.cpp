@@ -1,3 +1,4 @@
+#include <QDebug>
 #include <QJsonObject>
 #include <QJsonDocument>
 #include "message.h"
@@ -38,6 +39,8 @@ QByteArray Message::toByteArray() const
     jsonObject[COMMAND_ID_KEY] = mCommandId_.value();
     jsonObject[PARAMETERS_KEY] = mParameters_.toJsonArray();
     QJsonDocument jsonDocument(jsonObject);
+
+    qDebug() << Q_FUNC_INFO << jsonDocument.toJson(QJsonDocument::Compact);
 
     return jsonDocument.toJson(QJsonDocument::Compact);
 }

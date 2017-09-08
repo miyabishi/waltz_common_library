@@ -17,7 +17,7 @@ namespace waltz
             {
             public:
                 Message(const waltz::common::Commands::CommandId& aCommandId,
-                        const waltz::common::Commands::Parameters& aParameters);
+                        const waltz::common::Commands::Parameters& aParameters = waltz::common::Commands::Parameters());
                 Message(const Message& aOther);
                 Message& operator=(const Message& aOther);
 
