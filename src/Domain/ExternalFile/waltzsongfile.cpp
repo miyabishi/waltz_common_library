@@ -1,14 +1,8 @@
 #include "waltzsongfile.h"
 
-namespace waltz {
-namespace editor {
-namespace ExternalFile {
+using namespace waltz::editor::ExternalFile;
 
-WaltzSongFile::WaltzSongFile()
+WaltzSongFile::WaltzSongFile(const QString& aFilePath, const QVariantMap& aData)
 {
-
 }
 
-} // namespace ExternalFile
-} // namespace editor
-} // namespace waltz
