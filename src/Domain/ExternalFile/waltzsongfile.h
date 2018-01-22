@@ -13,7 +13,7 @@ namespace waltz
             class WaltzSongFile
             {
             public:
-                explict WaltzSongFile(const QString& aFilePath);
+                explicit WaltzSongFile(const QString& aFilePath);
                 void save(const QVariantMap& aData) const;
                 QVariantMap load() const;
 
@@ -21,8 +21,8 @@ namespace waltz
                 QString mFilePath_;
 
             private:
-                WaltzSongFile(const WaltzSonfFile& aOther);
-                WaltzSongFile operator=(const WaltzSonfFile& aOther);
+                WaltzSongFile(const WaltzSongFile& aOther);
+                WaltzSongFile operator=(const WaltzSongFile& aOther);
             };
         } // namespace ExternalFile
     } // namespace editor
