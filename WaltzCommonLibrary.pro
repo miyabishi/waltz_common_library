@@ -28,8 +28,7 @@ SOURCES += \
     src/Domain/Commands/parameter.cpp \
     src/Domain/Commands/parameters.cpp \
     src/Domain/Communicator/message.cpp \
-    src/Domain/Commands/parameterslist.cpp \
-    src/Domain/ExternalFile/waltzsongfile.cpp
+    src/Domain/Commands/parameterslist.cpp
 
 HEADERS +=\
         waltzcommonlibrary_global.h \
@@ -45,8 +44,7 @@ HEADERS +=\
     include/waltz_common/parameter.h \
     include/waltz_common/parameters.h \
     src/Domain/Commands/parameterslist.h \
-    include/waltz_common/parameterslist.h \
-    src/Domain/ExternalFile/waltzsongfile.h
+    include/waltz_common/parameterslist.h
 
 unix {
     target.path = /usr/lib
