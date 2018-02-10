@@ -11,6 +11,12 @@ Command::~Command()
 {
 }
 
+bool Command::commandIdEquals(CommandId aCommandId)
+{
+    return (aCommandId == mCommandId_);
+}
+
+
 bool Command::operator==(Command& aOther)
 {
     return mCommandId_ == aOther.mCommandId_;
