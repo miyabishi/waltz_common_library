@@ -11,7 +11,7 @@ Command::~Command()
 {
 }
 
-bool Command::commandIdEquals(CommandId aCommandId)
+bool Command::commandIdEquals(const CommandId& aCommandId)
 {
     return (aCommandId == mCommandId_);
 }

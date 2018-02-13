@@ -19,7 +19,7 @@ namespace waltz
                 explicit Command(const CommandId& aCommandId);
                 virtual ~Command();
                 bool operator==(Command& aOther);
-                bool commandIdEquals(CommandId aCommandId);
+                bool commandIdEquals(const CommandId& aCommandId);
 
             public:
                 virtual void exec(const Parameters& aParameters) = 0;
